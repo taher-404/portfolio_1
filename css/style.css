@@ -1,4 +1,5 @@
-@import 'utilities.css';
+@import "utilities.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 /* ? =========== colors =========== */
 :root {
@@ -7,6 +8,10 @@
   --pure: #ffffff;
   --ternary: #898989;
   --light: #f2f2f2;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -20,13 +25,28 @@ header {
   height: 800px;
 }
 
-.container{
-    max-width: 1152px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-header nav .left a{
-    color: var(--pure);
-    text-decoration: none;
+header nav{
+  padding: 2rem 0;
+}
+
+header nav .logo{
+  margin-right: 3rem;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+header nav .left a:hover{
+  color: var(--primary);
 }
