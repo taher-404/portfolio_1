@@ -10,7 +10,7 @@
   --light: #f2f2f2;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,7 +22,7 @@ body{
 
 header {
   background-color: var(--dark);
-  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
 }
 
 .container {
@@ -31,11 +31,11 @@ header {
   margin: 0 auto;
 }
 
-header nav{
+header nav {
   padding: 2rem 0;
 }
 
-header nav .logo{
+header nav .logo {
   margin-right: 3rem;
 }
 
@@ -47,6 +47,35 @@ header nav .left a {
   transition: 0.3s ease;
 }
 
-header nav .left a:hover{
+header nav .left a:hover {
   color: var(--primary);
+}
+
+.hero_area{
+  padding: 1rem 0;
+}
+.hero_area .left img {
+  width: 350px;
+}
+.hero_area .right {
+  color: var(--pure);
+  margin-top: -7rem;
+}
+.hero_area .right h6 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.hero_area .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero_area .right h1 span {
+  color: var(--primary);
+}
+.hero_area .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
 }
