@@ -9,6 +9,7 @@
   --pure: #ffffff;
   --ternary: #898989;
   --light: #f2f2f2;
+  --secondary: #070606;
 }
 
 body {
@@ -106,10 +107,10 @@ header nav .left a:hover {
   line-height: 1.9;
   margin-bottom: 3rem;
 }
-.about .social{
+.about .social {
   display: flex;
 }
-.about .social a{
+.about .social a {
   background-color: var(--dark);
   display: flex;
   align-items: center;
@@ -123,7 +124,66 @@ header nav .left a:hover {
   transition: 0.3s ease;
 }
 
-.about .social a:hover{
- background-color: var(--primary);
+.about .social a:hover {
+  background-color: var(--primary);
 }
 
+.services {
+  background-color: var(--light);
+}
+.services .section_heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.services .section_heading span {
+  color: var(--primary);
+}
+.services .section_heading + p {
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+section.services .card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 8rem;
+}
+section.services .card_wrapper .card {
+  background-color: var(--pure);
+  padding: 3rem 2rem;
+  padding-top: 6rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+section.services .card_wrapper .card:hover {
+  background-color: var(--dark);
+}
+section.services .card_wrapper .card:hover h2, section.services .card_wrapper .card:hover p{
+  color: var(--pure);
+}
+section.services .card_wrapper .card i {
+  background-color: var(--primary);
+  width: 100px;
+  padding: 1rem;
+  font-size: 40px;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.services .card_wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: -2.5rem;
+}
+section.services .card_wrapper .card p {
+ color: var(--ternary);
+ font-family: "Lato", sans-serif;
+ line-height: 1.6;
+ 
+}
